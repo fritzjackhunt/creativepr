@@ -1,3 +1,822 @@
-h1 {
-    color: red;
+* {
+    box-sizing: border-box;
 }
+
+body {
+    line-height: 1.1;
+    letter-spacing: 0.05rem;
+    font-family: 'Lato', sans-serif;
+}
+
+.gradient-navbar {
+    background: linear-gradient(to right, #FDB04E, #FF593E);
+}
+
+#jumbotron {
+    background: url('/static/pictures/jumbo.jpg') center no-repeat;
+    height: 610px;
+    background-size: cover;
+    padding-top: 70px;
+}
+
+.center-all {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    height: 434px;
+}
+
+.center-all h5 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    line-height: 1.1;
+    color: #fff;
+    font-size: 45px;
+}
+
+.center-all p {
+    margin-bottom: 26px;
+    font-size: 20px;
+    color: #fff;
+    line-height: 52px;
+    letter-spacing: 0.1px;
+}
+
+.custom-light {
+    display: inline-block;
+    width: 241px;
+    height: 49px;
+    text-align: center;
+    font-size: 20px;
+    color: #434343;
+    border-radius: 25px;
+    background: #fff;
+    font-weight: 700;
+    transition: .2s ease-in-out;
+    margin: 0 0 30px;
+    text-decoration: none;
+    padding-top: 1%;
+}
+
+.custom-light:hover {
+    background: #BB399B;
+    color: #fff;
+}
+
+.iphone-container {
+    position: relative;
+    display: inline-block;
+}
+
+.overlay-screen {
+    position: absolute;
+    top: 22%;     /* adjust until it aligns with iPhone screen */
+    left: 25.5%;    /* adjust until it aligns with iPhone screen */
+    width: 50%;   /* scale screenshot to fit the screen area */
+    height: 55%;  /* adjust based on your iPhone image proportions */
+    border-radius: 12px; /* optional: match iPhone screen curves */
+    object-fit: cover;
+}
+
+.iphone-base {
+    width: 100%;
+}
+
+#register i {
+    color: #FF7814;
+    font-size: 56px;
+}
+
+#register p {
+    color: #434343;
+    margin-top: 11px;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+#register span {
+    font-weight: 400;
+    margin-top: 27px;
+    line-height: 24px;
+    font-size: 16px;
+}
+
+#register-inner,
+#register-inner1 {
+    margin-top: 8%;
+}
+
+#register-inner1 ul {
+    list-style: none;
+    vertical-align: baseline;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+#register-inner1 ul li {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    position: relative;
+    width: 130px;
+    vertical-align: baseline;
+    padding-left: 10px;
+}
+
+#register-inner1 li::before {
+    content: '';
+    display: block;
+    width: 1px;
+    height: 32px;
+    position: absolute;
+    right: -4px;
+    top: 22px;
+    background: #d5d5d5;
+    margin-right: -10px;
+}
+
+#register-inner1 li span:first-of-type  {
+    width: 100%;
+    display: inline-block;
+    color: #BB399B;
+    font-size: 32px;
+    font-family: 500;
+    opacity: .5;
+}
+
+#register-inner1 li span:last-of-type {
+    font-size: 24px;
+    color: #757575;
+    display: block;
+    margin-top: 5px;
+}
+
+#register-inner1 li.posts span:first-of-type {
+    color: #DD9ECE;
+}
+#register-inner1 li.engagement span:first-of-type {
+    font-size: 36px;
+    opacity: 0.7;
+    color: #DD9CCD; 
+}
+#register-inner1 li.followers span:first-of-type {
+    opacity: 1;
+    font-size: 40px;
+    color: #BB399B; 
+}
+
+#register-inner1-in {
+    margin-top: 30%;
+}
+
+.btn-register {
+    display: inline-block;
+    width: 241px;
+    height: 49px;
+    text-align: center;
+    font-size: 20px;
+    color: #fff;
+    border-radius: 25px;
+    background: #BB399B;
+    font-weight: 700;
+    transition: .2s ease-in-out;
+    margin: 0 0 30px;
+    text-decoration: none;
+    border: 0;
+}
+
+
+.btn-register:hover {
+    background: #fff;
+    color: #BB399B;
+    border: 1px #BB399B solid;
+}
+
+#featured h5,
+#creators h5 {
+    font-size: 25px;
+    font-weight: 500;
+}
+
+#featured span,
+#creators span {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.featured-pic img {
+    width: 91px;
+    height: 91px;
+    border-radius: 50%;
+}
+
+.text-content {
+    padding-left: 8%;
+}
+
+.text-content p {
+    color: #BB399B;
+    margin-bottom: 1px;
+    font-size: 20px;
+}
+
+.text-content span {
+    color: #434343;
+}
+
+.card {
+    box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.15);
+}
+
+#featured-text,
+#creators-text {
+    padding: 0 20%;
+    margin-bottom: 5%;
+}
+
+#featured .col-lg-4 {
+    margin-bottom: 2%;
+}
+
+#creators-inner {
+    padding-top: 10%;
+}
+
+#creators-inner ul {
+    list-style-type: none;
+}
+
+#creators-inner ul li i {
+    color: #BB399B;
+}
+
+#reviews-card {
+    padding: 10px 40px;
+}
+
+.img-circle {
+    border-radius: 50%;
+}
+
+#reviews-card p {
+    font-size: 20px;
+}
+
+#reviews-inner {
+    border-radius: 25px;
+    box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.15);
+}
+
+#reviews-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+#footer {
+    color: #fff;
+    background: linear-gradient(to right, #FDB04E, #FF593E);
+    padding: 40px 30px;
+}
+
+#footer ul {
+    list-style-type: none;
+    padding-bottom: 5px;
+    text-transform: capitalize;
+}
+
+#footer ul li {
+    margin: 10px 0px;
+}
+
+
+
+
+
+/***** 
+
+Campaign page STARTS 
+
+***************/
+
+#camp-header {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    letter-spacing: 0.05rem;
+}
+
+#camp-header h5 {
+    font-size: 25px;
+    font-weight: 500;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+#campaing-pics div.card-body {
+    height: 200px;
+    width: 100%;
+    padding: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    border-radius: 10px 10px 0 0;
+    position: relative;
+    color: #fff;
+    overflow: hidden;
+}
+
+#campaing-pics div.card-body::before {
+    content: "";
+    position: absolute;
+    inset: 0; /* shorthand for top:0; right:0; bottom:0; left:0 */
+    background: rgba(0, 0, 0, 0.4); /* adjust darkness */
+    border-radius: inherit; /* match the parent’s radius */
+    z-index: 1; /* place behind text/button */
+}
+
+#campaing-pics div.card {
+    border-radius: 10px 10px 0 0;
+    margin-bottom: 20px;
+}
+
+#campaing-pics div.card-body h4,
+#campaing-pics div.card-body .top-btn {
+    position: relative;
+    z-index: 2; /* stay above the dark overlay */
+}
+
+.top-btn {
+    position: absolute;
+    top: 10px;
+    right: -80%;
+    background: rgba(255,255,255,0.9);
+    border: none;
+    border-radius: 6px;
+    padding: 6px 12px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.camp-text {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    z-index: 2;
+    align-items: flex-start;
+    height: 90%;
+    width: 100%;
+    justify-content: end;
+    padding-left: 5%;
+}
+
+.camp-btn {
+    display: inline-block;
+    width: 100px;
+    height: 35px;
+    text-align: center;
+    font-size: 14px;
+    color: #000000;
+    border-radius: 20px;
+    background: #ffff;
+    font-weight: 700;
+    transition: .2s ease-in-out;
+    margin: 0 0 30px;
+    text-decoration: none;
+    border: 1px solid #E0E0E0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+.camp-btn:hover {
+    background: #fff;
+    color: #BB399B;
+    border: 1px #BB399B solid;
+}
+
+.camp-text h4,
+.camp-text p {
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    font-family: 'Montserrat' sans-serif;
+    line-height: 1.1;
+    letter-spacing: 0.05rem;
+}
+
+.camp-text span {
+    color: #FF7814;
+    font-size: 16px;
+    padding-bottom: 1%;
+}
+
+.card0 {
+    background: url("/static/pictures/camp1.jpg");
+}
+
+.card1 {
+    background: url("/static/pictures/camp2.png");
+}
+
+.card2 {
+    background: url("/static/pictures/camp3.png");
+}
+
+.card3 {
+    background: url("/static/pictures/camp4.png");
+}
+
+.card4 {
+    background: url("/static/pictures/camp5.png");
+}
+
+.card5 {
+    background: url("/static/pictures/camp6.png");
+}
+
+.card6 {
+    background: url("/static/pictures/camp7.png");
+}
+
+.card7 {
+    background: url("/static/pictures/camp8.png");
+}
+
+.card8 {
+    background: url("/static/pictures/camp9.png");
+}
+
+.card9 {
+    background: url("/static/pictures/camp10.png");
+}
+
+.card10 {
+    background: url("/static/pictures/camp11.png");
+}
+
+.card11 {
+    background: url("/static/pictures/camp.png");
+}
+
+.card12 {
+    background: url("/static/pictures/camp12.png");
+}
+
+.card13 {
+    background: url("/static/pictures/camp13.jpeg");
+}
+
+.card14 {
+    background: url("/static/pictures/camp15.jpg");
+}
+
+.card15 {
+    background: url("/static/pictures/camp16.jpg");
+}
+
+
+/***** 
+
+Campaign page ENDS 
+
+***************/
+
+
+
+
+
+
+
+
+
+
+
+
+
+/***************
+
+Pricing page STARTS 
+
+***************/
+
+#pricing-header h4,
+#core h4 {
+    font-size: 45px;
+    text-align: center;
+    font-weight: 600;
+    margin-top: 60px;
+}
+
+#pricing-header p {
+    text-align: center;
+    font-size: 25px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+
+.pricing-btn {
+    display: inline-block;
+    width: 285px;
+    height: 50px;
+    text-align: center;
+    font-size: 18px;
+    color: #000000;
+    border-radius: 10px;
+    background: #ffff;
+    margin: 0 0 30px;
+    text-decoration: none;
+    border: 1px solid #E0E0E0;
+}
+
+#pricing-list ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+#pricing-list ul li span {
+    color: #6E4DFF;
+    font-size: 19px;
+    font-weight: 700;
+}
+
+#pricing-list ul li p {
+    color: #757575;
+    font-size: 19px;
+    font-weight: 600;
+}
+
+#pricing-list ul li:first-of-type {
+    height: 150px;
+}
+
+#pricing-list ul li div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    margin-bottom: 10px;
+}
+
+
+.free li div,
+.startup li div {
+    border: 5px solid #F6F6F6;
+}
+
+.pro li div {
+    border: 5px solid #FDB50E;
+}
+
+.pro li,
+.free li,
+.startup li {
+    font-weight: 900;
+    color: #434343;
+    align-self: center;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.plans li {
+    align-self: center;
+    align-content: center;
+    align-items: center;
+    justify-content: start;
+}
+
+
+
+.plans {
+    font-size: 14px;
+    font-weight: lighter;
+}
+
+.free {
+    background-color: #F6F6F6;
+    text-align: center;
+    font-size: 17px;
+    font-weight: 400;
+}
+
+.startup {
+    background-color: #F6F6F6;
+    text-align: center;
+}
+
+.pro {
+    background: linear-gradient(to bottom, #F9971F, #BC399A);
+    color: #fff;
+    text-align: center;
+}
+
+.pro p {
+    color: black;
+}
+
+.fa-xmark {
+    color: #FE4B61;
+    justify-content: center;
+    font-size: larger;
+    font-weight: 700;
+}
+
+.fa-check {
+    color: #59AA00;
+    justify-content: center;
+    font-size: larger;
+    font-weight: 700;
+}
+
+.free li section,
+.startup li section {
+    background-color: #fff;
+    border-radius: 25px;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 3px 3px 5px 2px rgba(0, 0, 0, 0.1);
+}
+
+
+.login-btn {
+    display: inline-block;
+    width: 100px;
+    height: 35px;
+    text-align: center;
+    font-size: 14px;
+    color: #fff;
+    border-radius: 10px;
+    background: #BB399B;
+    text-decoration: none;
+    border: 0;
+}
+
+.pro-login-btn {
+    display: inline-block;
+    width: 100px;
+    height: 35px;
+    text-align: center;
+    font-size: 14px;
+    color: #434343;
+    border-radius: 10px;
+    background: #fff;
+    text-decoration: none;
+    border: 0;
+}
+
+#core,
+#core-inner {
+    background-color: #F6F6F6;
+    padding: 10px 40px;
+}
+
+#core-inner i {
+    font-size: 64px;
+    color: #FF6B4C;
+}
+
+#core-inner p {
+    margin: 10px 0;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+#core-inner span {
+    color: #757575;
+    font-size: 13px;
+}
+
+.core-text {
+    text-align: center;
+    padding: 10px 30px;
+    margin-top: 20px;
+}
+
+#small-large h4 {
+    font-size: 20px;
+    text-align: center;
+    font-weight: 600;
+    margin-top: 60px;
+}
+
+#small-large {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+#faqs {
+    background-color: #F6F6F6;
+    padding: 40px 40px;
+}
+
+#faqs h4 {
+    font-size: 45px;
+    font-weight: 600;
+}
+
+#faq-header {
+    padding: 30px 10px;
+}
+
+
+
+
+
+/**************
+
+Pricing page ENDS 
+
+***************/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/**************
+
+For Brands page STARTS 
+
+***************/
+
+#brands-jumbotron {
+    background: url('/static/pictures/forbrands.jpg') center no-repeat;
+    height: 610px;
+    background-size: cover;
+    padding-top: 70px;
+}
+
+
+
+
+/**************
+
+For Brands page ENDS 
+
+***************/
+
+
+
+
+
+
+/* Small devices (landscape phones, 576px and up) */
+@media (max-width: 576px) { 
+    #pricing-list ul li {
+        display: flex;
+        height: 33px;
+        margin-bottom: 10px;
+        font-size: 16px;
+    }
+
+    #pricing-list ul span {
+        opacity: 0.5;
+        font-size: 16px;
+    }
+
+
+    #pricing-list ul.free li:nth-child(n + 12):nth-child(-n + 22),
+    #pricing-list ul.startup li:nth-child(n + 12):nth-child(-n + 22),
+    #pricing-list ul.pro li:nth-child(n + 12):nth-child(-n + 22) {
+        display: none;
+    }
+
+
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+    #pricing-list ul span {
+        display: none;
+    }
+
+    #pricing-list ul li {
+        display: flex;
+        height: 66px;
+    }
+}
+

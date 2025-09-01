@@ -1,0 +1,104 @@
+{% extends 'creative/base.html' %}
+{% load static %}
+
+{% block content %}
+
+<div class="container-fluid" id="brands-jumbotron">
+    <div class="row">
+        <div class="col-lg-12 center-all">
+            <div class="text-center">
+                <h5>Brands  Thecreativepr</h5>
+
+                <p>Work with authentic and verified influencers. Start collabs in minutes.</p>
+
+                <a type="button" class="custom-light">Browse Influencers</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--Register SECTION STARTS-->
+
+<div class="container" id="register">
+    <div class="row">
+
+        <div class="col-lg-4 position-relative iphone-container">
+            <!-- iPhone Image -->
+            <img src="{% static 'pictures/iphone.png' %}" alt="iPhone" class="img-fluid iphone-base">
+
+            <!-- Screen Overlay -->
+            <img src="{% static 'pictures/brands.jpg' %}" alt="App Screenshot" class="overlay-screen">
+        </div>
+
+        <div class="col-lg-4" id="register-inner">
+            <div class="text-center mb-5">
+                <i><i class="fa-regular fa-eye"></i></i>
+                <p>Top influencers</p>
+                <span>We check influencers for accuracy and authenticity with our proprietary <b>Thecreativepr Score! </b>Work with authentic influencers only!</span>
+            </div>
+
+            <div class="text-center">
+                <i class="fa-solid fa-percent"></i>
+                <p>Guaranteed & Secure.</p>
+                <span>Your money is safe until influencer completes the work. You pay only when you are satisfied with the work!</span>
+            </div>
+
+        </div>
+
+        
+
+
+        <div class="col-lg-4" id="register-inner1">
+
+            <div class="text-center">
+                <ul>
+                    <li class="posts">
+                        <span>8073</span>
+                        <span>Posts</span>
+                    </li>
+
+                    <li class="engagement">
+                        <span>9.7%</span>
+                        <span>Engagement</span>
+                    </li>
+
+                    <li class="followers">
+                        <span>65.2K</span>
+                        <span>Followers</span>
+                    </li>
+
+                </ul>
+            </div>
+
+            <div class="text-center" id="register-inner1-in">
+                <i class="fa-solid fa-chart-line"></i>
+                <p>Guaranteed & Secure.</p>
+                <span>Your money is safe until influencer completes the work. You pay only when you are satisfied with the work!</span>
+            </div>
+
+            
+        </div>
+
+        <div class="col-lg-12 text-center">
+            <button class="btn-register">Register for Free</button>
+        </div>
+
+    </div>
+</div>
+
+<!--Register SECTION ENDS-->
+
+<div class="container" id="small-large">
+    <div class="row">
+        <div class="col-lg-12">
+            <h4>From small to large, over 10,000+ teams used Thecreativepr</h4>
+        </div>
+
+        <div class="col-lg-12">
+            <img src="{% static 'pictures/pricing.png' %}" alt="Pricing" style="width: 80%; height: 80%;">
+        </div>
+    </div>
+</div>
+
+
+{% endblock %}

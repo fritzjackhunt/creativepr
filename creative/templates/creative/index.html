@@ -1,11 +1,923 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Creative Pr</title>
-</head>
-<body>
-    <h1>Hello World</h1>
-</body>
-</html>
+{% extends 'creative/base.html' %}
+{% load static %}
+
+{% block content %}
+
+    <!--Jumbotron SECTION STARTS-->
+
+    <div class="container-fluid" id="jumbotron">
+        <div class="row">
+            <div class="col-lg-12 center-all">
+                <div class="text-center">
+                    <h5>Hire Influencers & UGC Creators</h5>
+
+                    <p>Find & hire best TikTok, YouTube and UGC influencers. Start in just a few minutes!</p>
+
+                    <a type="button" class="custom-light">Browse Influencers</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Jumbotron SECTION STARTS-->
+
+
+    <!--Tape SECTION STARTS-->
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-12">
+                <img src="{% static 'pictures/tape.png' %}" alt="Thecreativepr" width="100%" height="100%">
+            </div>
+        </div>
+    </div>
+
+    <!--Tape SECTION STARTS-->
+
+
+
+
+    <!--Register SECTION STARTS-->
+
+    <div class="container" id="register">
+        <div class="row">
+
+            <div class="col-lg-4" id="register-inner">
+                <div class="text-center mb-5">
+                    <i><i class="fa-regular fa-eye"></i></i>
+                    <p>Top influencers</p>
+                    <span>We check influencers for accuracy and authenticity with our proprietary <b>Thecreativepr Score! </b>Work with authentic influencers only!</span>
+                </div>
+
+                <div class="text-center">
+                    <i class="fa-solid fa-percent"></i>
+                    <p>Guaranteed & Secure.</p>
+                    <span>Your money is safe until influencer completes the work. You pay only when you are satisfied with the work!</span>
+                </div>
+
+            </div>
+
+           <div class="col-lg-4 position-relative iphone-container">
+                <!-- iPhone Image -->
+                <img src="{% static 'pictures/iphone.png' %}" alt="iPhone" class="img-fluid iphone-base">
+
+                <!-- Screen Overlay -->
+                <img src="{% static 'pictures/register.jpg' %}" alt="App Screenshot" class="overlay-screen">
+            </div>
+
+
+            <div class="col-lg-4 d-none d-lg-block" id="register-inner1">
+
+                <div class="text-center">
+                    <ul>
+                        <li class="posts">
+                            <span>8073</span>
+                            <span>Posts</span>
+                        </li>
+
+                        <li class="engagement">
+                            <span>9.7%</span>
+                            <span>Engagement</span>
+                        </li>
+
+                        <li class="followers">
+                            <span>65.2K</span>
+                            <span>Followers</span>
+                        </li>
+
+                    </ul>
+                </div>
+
+                <div class="text-center" id="register-inner1-in">
+                    <i class="fa-solid fa-chart-line"></i>
+                    <p>Guaranteed & Secure.</p>
+                    <span>Your money is safe until influencer completes the work. You pay only when you are satisfied with the work!</span>
+                </div>
+            </div>
+
+            <div class="col-lg-12 text-center">
+                <button class="btn-register">Register for Free</button>
+            </div>
+
+        </div>
+    </div>
+
+    <!--Register SECTION ENDS-->
+
+
+
+
+    <!--Featured SECTION STARTS-->
+
+    <div class="container mt-5" id="featured">
+        <div class="row">
+            <div class="col-lg-12 text-center" id="featured-text">
+                <h5>Featured Influencers</h5>
+                <span>Hire top influencers & UGC creators to get your message in front of the right audience! <b>Top influencer platform, </b>simple setup, guaranteed & secure process.</span>
+            </div>
+
+            <div class="col-lg-4">
+                <div class="card">
+                    <div class="card-body d-flex align-items-center">
+
+                        <div class="featured-pic">
+                            <img src="{% static 'pictures/f1.jpeg' %}" alt="Featured influencer">
+                        </div>
+                       
+                        <div class="text-content">
+                            <p>246.8K</p>
+                            <span><b>@</b>cut...<i class="fa-solid fa-lock"></i></span>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4">
+                <div class="card">
+                    <div class="card-body d-flex align-items-center">
+
+                        <div class="featured-pic">
+                            <img src="{% static 'pictures/f2.jpeg' %}" alt="Featured influencer">
+                        </div>
+                       
+                        <div class="text-content">
+                            <p>389.5K</p>
+                            <span><b>@</b>kdp...<i class="fa-solid fa-lock"></i></span>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4">
+                <div class="card">
+                    <div class="card-body d-flex align-items-center">
+
+                        <div class="featured-pic">
+                            <img src="{% static 'pictures/f3.jpeg' %}" alt="Featured influencer">
+                        </div>
+                       
+                        <div class="text-content">
+                            <p>547.5K</p>
+                            <span><b>@</b>my_...<i class="fa-solid fa-lock"></i></span>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4">
+                <div class="card">
+                    <div class="card-body d-flex align-items-center">
+
+                        <div class="featured-pic">
+                            <img src="{% static 'pictures/f4.jpeg' %}" alt="Featured influencer">
+                        </div>
+                       
+                        <div class="text-content">
+                            <p>5.9m</p>
+                            <span><b>@</b>not...<i class="fa-solid fa-lock"></i></span>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4">
+                <div class="card">
+                    <div class="card-body d-flex align-items-center">
+
+                        <div class="featured-pic">
+                            <img src="{% static 'pictures/f5.jpeg' %}" alt="Featured influencer">
+                        </div>
+                       
+                        <div class="text-content">
+                            <p>2.5m</p>
+                            <span><b>@</b>scr...<i class="fa-solid fa-lock"></i></span>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4">
+                <div class="card">
+                    <div class="card-body d-flex align-items-center">
+
+                        <div class="featured-pic">
+                            <img src="{% static 'pictures/f6.jpeg' %}" alt="Featured influencer">
+                        </div>
+                       
+                        <div class="text-content">
+                            <p>1.1m</p>
+                            <span><b>@</b>ret...<i class="fa-solid fa-lock"></i></span>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4">
+                <div class="card">
+                    <div class="card-body d-flex align-items-center">
+
+                        <div class="featured-pic">
+                            <img src="{% static 'pictures/f7.jpeg' %}" alt="Featured influencer">
+                        </div>
+                       
+                        <div class="text-content">
+                            <p>3.7m</p>
+                            <span><b>@</b>epi...<i class="fa-solid fa-lock"></i></span>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4">
+                <div class="card">
+                    <div class="card-body d-flex align-items-center">
+
+                        <div class="featured-pic">
+                            <img src="{% static 'pictures/f8.jpeg' %}" alt="Featured influencer">
+                        </div>
+                       
+                        <div class="text-content">
+                            <p>3.2m</p>
+                            <span><b>@</b>pla...<i class="fa-solid fa-lock"></i></span>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4">
+                <div class="card">
+                    <div class="card-body d-flex align-items-center">
+
+                        <div class="featured-pic">
+                            <img src="{% static 'pictures/f9.jpeg' %}" alt="Featured influencer">
+                        </div>
+                       
+                        <div class="text-content">
+                            <p>3m</p>
+                            <span><b>@</b>bus...<i class="fa-solid fa-lock"></i></span>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4">
+                <div class="card">
+                    <div class="card-body d-flex align-items-center">
+
+                        <div class="featured-pic">
+                            <img src="{% static 'pictures/f10.jpeg' %}" alt="Featured influencer">
+                        </div>
+                       
+                        <div class="text-content">
+                            <p>8.5m</p>
+                            <span><b>@</b>bvi...<i class="fa-solid fa-lock"></i></span>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4">
+                <div class="card">
+                    <div class="card-body d-flex align-items-center">
+
+                        <div class="featured-pic">
+                            <img src="{% static 'pictures/f11.jpeg' %}" alt="Featured influencer">
+                        </div>
+                       
+                        <div class="text-content">
+                            <p>4m</p>
+                            <span><b>@</b>lea...<i class="fa-solid fa-lock"></i></span>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4">
+                <div class="card">
+                    <div class="card-body d-flex align-items-center">
+
+                        <div class="featured-pic">
+                            <img src="{% static 'pictures/f12.jpeg' %}" alt="Featured influencer">
+                        </div>
+                       
+                        <div class="text-content">
+                            <p>2m</p>
+                            <span><b>@</b>tou...<i class="fa-solid fa-lock"></i></span>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4">
+                <div class="card">
+                    <div class="card-body d-flex align-items-center">
+
+                        <div class="featured-pic">
+                            <img src="{% static 'pictures/f13.jpeg' %}" alt="Featured influencer">
+                        </div>
+                       
+                        <div class="text-content">
+                            <p>3.5m</p>
+                            <span><b>@</b>tat...<i class="fa-solid fa-lock"></i></span>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4">
+                <div class="card">
+                    <div class="card-body d-flex align-items-center">
+
+                        <div class="featured-pic">
+                            <img src="{% static 'pictures/f14.jpeg' %}" alt="Featured influencer">
+                        </div>
+                       
+                        <div class="text-content">
+                            <p>792.7k</p>
+                            <span><b>@</b>eng...<i class="fa-solid fa-lock"></i></span>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4">
+                <div class="card">
+                    <div class="card-body d-flex align-items-center">
+
+                        <div class="featured-pic">
+                            <img src="{% static 'pictures/f15.jpeg' %}" alt="Featured influencer">
+                        </div>
+                       
+                        <div class="text-content">
+                            <p>590.6K</p>
+                            <span><b>@</b>typ...<i class="fa-solid fa-lock"></i></span>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4">
+                <div class="card">
+                    <div class="card-body d-flex align-items-center">
+
+                        <div class="featured-pic">
+                            <img src="{% static 'pictures/f16.jpeg' %}" alt="Featured influencer">
+                        </div>
+                       
+                        <div class="text-content">
+                            <p>673.5K</p>
+                            <span><b>@</b>dre...<i class="fa-solid fa-lock"></i></span>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4">
+                <div class="card">
+                    <div class="card-body d-flex align-items-center">
+
+                        <div class="featured-pic">
+                            <img src="{% static 'pictures/f17.jpeg' %}" alt="Featured influencer">
+                        </div>
+                       
+                        <div class="text-content">
+                            <p>1.4m</p>
+                            <span><b>@</b>Foe...<i class="fa-solid fa-lock"></i></span>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4">
+                <div class="card">
+                    <div class="card-body d-flex align-items-center">
+
+                        <div class="featured-pic">
+                            <img src="{% static 'pictures/f18.jpeg' %}" alt="Featured influencer">
+                        </div>
+                       
+                        <div class="text-content">
+                            <p>218K</p>
+                            <span><b>@</b>Cro...<i class="fa-solid fa-lock"></i></span>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4">
+                <div class="card">
+                    <div class="card-body d-flex align-items-center">
+
+                        <div class="featured-pic">
+                            <img src="{% static 'pictures/f19.jpeg' %}" alt="Featured influencer">
+                        </div>
+                       
+                        <div class="text-content">
+                            <p>1.9m</p>
+                            <span><b>@</b>Cat...<i class="fa-solid fa-lock"></i></span>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4">
+                <div class="card">
+                    <div class="card-body d-flex align-items-center">
+
+                        <div class="featured-pic">
+                            <img src="{% static 'pictures/f20.jpeg' %}" alt="Featured influencer">
+                        </div>
+                       
+                        <div class="text-content">
+                            <p>77.2K</p>
+                            <span><b>@</b>Gre...<i class="fa-solid fa-lock"></i></span>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4">
+                <div class="card">
+                    <div class="card-body d-flex align-items-center">
+
+                        <div class="featured-pic">
+                            <img src="{% static 'pictures/f21.jpeg' %}" alt="Featured influencer">
+                        </div>
+                       
+                        <div class="text-content">
+                            <p>488.7K</p>
+                            <span><b>@</b>luk...<i class="fa-solid fa-lock"></i></span>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4">
+                <div class="card">
+                    <div class="card-body d-flex align-items-center">
+
+                        <div class="featured-pic">
+                            <img src="{% static 'pictures/f22.jpeg' %}" alt="Featured influencer">
+                        </div>
+                       
+                        <div class="text-content">
+                            <p>1.5m</p>
+                            <span><b>@</b>jor...<i class="fa-solid fa-lock"></i></span>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4">
+                <div class="card">
+                    <div class="card-body d-flex align-items-center">
+
+                        <div class="featured-pic">
+                            <img src="{% static 'pictures/f23.jpeg' %}" alt="Featured influencer">
+                        </div>
+                       
+                        <div class="text-content">
+                            <p>17.2m</p>
+                            <span><b>@</b>Gre...<i class="fa-solid fa-lock"></i></span>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4">
+                <div class="card">
+                    <div class="card-body d-flex align-items-center">
+
+                        <div class="featured-pic">
+                            <img src="{% static 'pictures/f24.jpeg' %}" alt="Featured influencer">
+                        </div>
+                       
+                        <div class="text-content">
+                            <p>1.6m</p>
+                            <span><b>@</b>idr...<i class="fa-solid fa-lock"></i></span>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4">
+                <div class="card">
+                    <div class="card-body d-flex align-items-center">
+
+                        <div class="featured-pic">
+                            <img src="{% static 'pictures/f25.jpeg' %}" alt="Featured influencer">
+                        </div>
+                       
+                        <div class="text-content">
+                            <p>341K</p>
+                            <span><b>@</b>men...<i class="fa-solid fa-lock"></i></span>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4">
+                <div class="card">
+                    <div class="card-body d-flex align-items-center">
+
+                        <div class="featured-pic">
+                            <img src="{% static 'pictures/f26.jpeg' %}" alt="Featured influencer">
+                        </div>
+                       
+                        <div class="text-content">
+                            <p>315.3K</p>
+                            <span><b>@</b>Nan...<i class="fa-solid fa-lock"></i></span>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4">
+                <div class="card">
+                    <div class="card-body d-flex align-items-center">
+
+                        <div class="featured-pic">
+                            <img src="{% static 'pictures/f27.jpeg' %}" alt="Featured influencer">
+                        </div>
+                       
+                        <div class="text-content">
+                            <p>5.9m</p>
+                            <span><b>@</b>gir...<i class="fa-solid fa-lock"></i></span>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-12 text-center">
+                <button class="btn-register">Browse Influencers</button>
+            </div>
+   
+        </div>
+    </div>
+
+    <!--Featured SECTION ENDS-->
+
+
+
+    <!--Creators SECTION STARTS-->
+
+    <div class="container mt-5" id="creators">
+        <div class="row">
+            <div class="col-lg-12 text-center" id="creators-text">
+                <h5>Creators & Influencers</h5>
+                <span>Find and hire top Creators & Influencers on Thecreativepr.</span>
+                <span>Use our opt-in network to manage campaigns & make secure payments.</span>
+            </div>
+
+            <div class="col-lg-6">
+                <div class="card mb-3">
+                    <div class="card-body d-flex align-items-center">
+
+                        <div class="featured-pic">
+                            <img src="{% static 'pictures/f3.jpeg' %}" alt="Featured influencer">
+                        </div>
+                       
+                        <div class="text-content">
+                            <p>547.5K</p>
+                            <span><b>@</b>my_...<i class="fa-solid fa-lock"></i></span>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="card mb-3">
+                    <div class="card-body d-flex align-items-center">
+
+                        <div class="featured-pic">
+                            <img src="{% static 'pictures/f1.jpeg' %}" alt="Featured influencer">
+                        </div>
+                       
+                        <div class="text-content">
+                            <p>246.8K</p>
+                            <span><b>@</b>cut...<i class="fa-solid fa-lock"></i></span>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="card mb-3">
+                    <div class="card-body d-flex align-items-center">
+
+                        <div class="featured-pic">
+                            <img src="{% static 'pictures/f5.jpeg' %}" alt="Featured influencer">
+                        </div>
+                       
+                        <div class="text-content">
+                            <p>1.6m</p>
+                            <span><b>@</b>idr...<i class="fa-solid fa-lock"></i></span>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-6 text-center" id="creators-inner">
+                <p>Go beyond outreach to nano, micro & mega influencers. Thecreativepr is an all in one influencer marketing suite that allows you to find, hire, track and pay influencers.</p>
+
+                <ul class="py-3">
+                    <li><i class="fa-solid fa-check"></i>  Giveaway campaigns & contests</li>
+                    <li><i class="fa-solid fa-check"></i> Product seeding & UGC campaigns</li>
+                    <li><i class="fa-solid fa-check"></i> Brand mentions & product placement</li>
+                    <li><i class="fa-solid fa-check"></i> Custom content & video reviews</li>
+                </ul>
+
+                <div>
+                    <button class="btn-register">Browse Influencers</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Creators SECTION ENDS-->
+
+
+
+
+    <!--Tiktok SECTION STARTS-->
+
+    <div class="container mt-5" id="creators">
+        <div class="row">
+            <div class="col-lg-12 text-center" id="creators-text">
+                <h5>Tiktok Influencers</h5>
+                <span>Hire Tiktok creators. The hottest social media app today.</span>
+                <span>Get your brand in front of thousands of Tiktok influencers. Simple setup & secure payments.</span>
+            </div>
+
+            <div class="col-lg-6">
+                <div class="card mb-3">
+                    <div class="card-body d-flex align-items-center">
+
+                        <div class="featured-pic">
+                            <img src="{% static 'pictures/f3.jpeg' %}" alt="Featured influencer">
+                        </div>
+                       
+                        <div class="text-content">
+                            <p>315.3K</p>
+                            <span><b>@</b>Nan...<i class="fa-solid fa-lock"></i></span>
+                            <br>
+                            <span><i class="fa-brands fa-tiktok"></i></span>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="card mb-3">
+                    <div class="card-body d-flex align-items-center">
+
+                        <div class="featured-pic">
+                            <img src="{% static 'pictures/f1.jpeg' %}" alt="Featured influencer">
+                        </div>
+                       
+                        <div class="text-content">
+                            <p>17.2m</p>
+                            <span><b>@</b>Gre...<i class="fa-solid fa-lock"></i></span>
+                            <br>
+                            <span><i class="fa-brands fa-tiktok"></i></span>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="card mb-3">
+                    <div class="card-body d-flex align-items-center">
+
+                        <div class="featured-pic">
+                            <img src="{% static 'pictures/f5.jpeg' %}" alt="Featured influencer">
+                        </div>
+                       
+                        <div class="text-content">
+                            <p>341K</p>
+                            <span><b>@</b>men...<i class="fa-solid fa-lock"></i></span>
+                            <br>
+                            <span><i class="fa-brands fa-tiktok"></i></span>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-6 text-center" id="creators-inner">
+                <p>We built a large opt-in network for brands to collaborate with Tiktok creators on merch deals, custom video campaigns, and pay directly through Thecreativepr for added control.</p>
+
+                <ul class="py-3">
+                    <li><i class="fa-solid fa-check"></i> Tiktok collabs & merch promotion</li>
+                    <li><i class="fa-solid fa-check"></i> Music promotion & dances</li>
+                    <li><i class="fa-solid fa-check"></i> Custom videos & Tiktok challenges</li>
+                    <li><i class="fa-solid fa-check"></i> Giveaway campaigns & app contests</li>
+                    <li><i class="fa-solid fa-check"></i> Brand mentions & product placement</li>
+                </ul>
+
+                <div>
+                    <button class="btn-register">Browse <i class="fa-brands fa-tiktok"></i> Tiktok Influencers</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Tiktok SECTION ENDS-->
+
+
+
+
+    <!--Youtube SECTION STARTS-->
+
+    <div class="container mt-5" id="creators">
+        <div class="row">
+            <div class="col-lg-12 text-center" id="creators-text">
+                <h5>Youtube Creators</h5>
+                <span>Hire and collaborate with Youtube creators on Thecreativepr.</span>
+                <span>Get your product mentioned in upcoming videos or get a custom video created. Simple process & secure payments.</span>
+            </div>
+
+            <div class="col-lg-6">
+                <div class="card mb-3">
+                    <div class="card-body d-flex align-items-center">
+
+                        <div class="featured-pic">
+                            <img src="{% static 'pictures/f3.jpeg' %}" alt="Featured influencer">
+                        </div>
+                       
+                        <div class="text-content">
+                            <p>77.2K</p>
+                            <span><b>@</b>Gre...<i class="fa-solid fa-lock"></i></span>
+                            <br>
+                            <span><i class="fa-brands fa-youtube"></i></span>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="card mb-3">
+                    <div class="card-body d-flex align-items-center">
+
+                        <div class="featured-pic">
+                            <img src="{% static 'pictures/f1.jpeg' %}" alt="Featured influencer">
+                        </div>
+                       
+                        <div class="text-content">
+                            <p>218K</p>
+                            <span><b>@</b>Cro...<i class="fa-solid fa-lock"></i></span>
+                            <br>
+                            <span><i class="fa-brands fa-youtube"></i></span>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="card mb-3">
+                    <div class="card-body d-flex align-items-center">
+
+                        <div class="featured-pic">
+                            <img src="{% static 'pictures/f5.jpeg' %}" alt="Featured influencer">
+                        </div>
+                       
+                        <div class="text-content">
+                            <p>1.4m</p>
+                            <span><b>@</b>Foe...<i class="fa-solid fa-lock"></i></span>
+                            <br>
+                            <span><i class="fa-brands fa-youtube"></i></span>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-6 text-center" id="creators-inner">
+                <p>From former olympians to rising beauty entrepreneurs, collaborate on custom video creation campaigns, tutorials, reviews or gameplay videos with Thecreativepr's opt-in network.</p>
+
+                <ul class="py-3">
+                    <li><i class="fa-solid fa-check"></i> Gameplay & tutorial videos</li>
+                    <li><i class="fa-solid fa-check"></i> Reviews & mention videos</li>
+                    <li><i class="fa-solid fa-check"></i> Product hauls & lookbook campaigns</li>
+                    <li><i class="fa-solid fa-check"></i> Unboxing videos & product endorsements</li>
+                    <li><i class="fa-solid fa-check"></i> Custom content & comedic sketches</li>
+                </ul>
+
+                <div>
+                    <button class="btn-register">Browse <i class="fa-brands fa-youtube"></i> Youtube Influencers</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Youtube SECTION ENDS-->
+
+
+
+
+
+    <!--Trusted SECTION STARTS-->
+
+    <div class="container-fluid mt-5">
+        <div class="row">
+
+            <div class="col-lg-21 text-center">
+                <h5><b>Thecreativepr is trusted by 10,000+ teams</b></h5>
+            </div>
+
+            <div class="col-lg-12">
+                <img src="{% static 'pictures/trusted.png' %}" alt="" style="width: 100%;
+                height: 100%;">
+            </div>
+        </div>
+    </div>
+
+    <!--Trusted SECTION ENDS-->
+
+
+
+
+    <!--Reviews SECTION STARTS-->
+
+    <div class="container" id="reviews">
+        <div class="row">
+
+            <div class="col-lg-5">
+                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="card" id="reviews-inner">
+                                <div class="card-body text-center" id="reviews-card">
+                                    <img src="{% static 'pictures/review.png' %}" alt="..." class="img-circle" style="width: 90px; height: 90px;">
+
+                                    <p>Songplay By Anobot LLC</p>
+
+                                    <span>Thecreativepr allowed us to push our music app through iOS charts and acquire downloads at $0.10 cpi, our most successful launch!
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <div class="card" id="reviews-inner">
+                                <div class="card-body text-center" id="reviews-card">
+                                    <img src="{% static 'pictures/review1.jpg' %}" alt="..." class="img-circle"  style="width: 90px; height: 90px;">
+
+                                    <p>Goal Tactics by Xyrality GmbH</p>
+
+                                    <span>We drove targeted installs of our game with Thecreativepr, it resulted in great chart and search results positions!
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <div class="card" id="reviews-inner">
+                                <div class="card-body text-center" id="reviews-card">
+                                    <img src="{% static 'pictures/review2.jpg' %}" alt="..." class="img-circle"  style="width: 90px; height: 90px;">
+
+                                    <p>@santinoloconte</p>
+
+                                    <span>Thecreativepr helped us promote a contest for new sneakers. We received great engagement and many followers!
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-6" id="reviews-btn">
+                <button class="btn-register">Register for Free</button>
+            </div>
+        </div>
+    </div>
+
+
+    <!--Reviews SECTION ENDS-->
+
+
+
+{% endblock%}
